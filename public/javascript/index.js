@@ -1,7 +1,10 @@
-const charactersAPI = new APIHandler('http://localhost:8000');
+const charactersAPI = new APIHandler('https://minions-api.herokuapp.com/characters');
 
 window.addEventListener('load', () => {
+  console.log(charactersAPI.getFullList())
   document.getElementById('fetch-all').addEventListener('click', function (event) {
+    charactersAPI
+
 
   });
 
